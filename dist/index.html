@@ -1,0 +1,13 @@
+<!DOCTYPE html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1"><title>wulai_web_sdk_vue</title><link href=https://pm.wul.ai/static/js/app.e49a757b.js rel=preload as=script></head><body><noscript><strong>We're sorry but wulai_web_sdk_vue doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript><script src=https://pm.wul.ai/static/js/app.e49a757b.js></script></body><script>var userId = localStorage.getItem('userId');
+    if(_.isEmpty(userId))
+    {
+      userId = WulaiLib.privateUtils.generateUUID();
+      localStorage.setItem('userId', userId);
+    }
+    new Wulai({
+      pubkey: 'XFk6gcCT8F5fNYRTB0LvJM7UuWrIiW3k007c3e4148cd2968ec',
+      userId: userId,
+      async: false,
+      autoOpen: true,
+      fullScreen: false
+    })</script></html>
